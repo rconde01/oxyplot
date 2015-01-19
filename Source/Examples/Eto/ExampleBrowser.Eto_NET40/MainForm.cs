@@ -43,6 +43,9 @@ namespace ExampleBrowser.Eto_NET40
 
          this.treeView = new TreeView();
 
+         treeView.Width = 100;
+         treeView.Height = 300;
+
          var root = new TreeItem();
 
          TreeItem categoryNode = null;

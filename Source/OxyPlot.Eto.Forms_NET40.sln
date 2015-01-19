@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OxyPlot_NET40", "OxyPlot\OxyPlot_NET40.csproj", "{1C1D9807-BE39-40A4-87DE-3F81E7C651E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OxyPlot.Eto.Forms_NET40", "OxyPlot.Eto.Forms_NET40\OxyPlot.Eto.Forms_NET40.csproj", "{235D6DEE-7D43-4783-B381-C609A259BBAF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExampleLibrary_NET40", "Examples\ExampleLibrary\ExampleLibrary_NET40.csproj", "{B8A34A2F-E505-4517-8EFF-7F80E39CF425}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExampleBrowser.Eto_NET40", "Examples\Eto\ExampleBrowser.Eto_NET40\ExampleBrowser.Eto_NET40.csproj", "{026EFB59-82C6-4A76-8841-490705378925}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DC5D460F-ACC2-4FF5-915A-265815EFD320}"
+	ProjectSection(SolutionItems) = preProject
+		Performance2.psess = Performance2.psess
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1C1D9807-BE39-40A4-87DE-3F81E7C651E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C1D9807-BE39-40A4-87DE-3F81E7C651E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C1D9807-BE39-40A4-87DE-3F81E7C651E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C1D9807-BE39-40A4-87DE-3F81E7C651E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{235D6DEE-7D43-4783-B381-C609A259BBAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{235D6DEE-7D43-4783-B381-C609A259BBAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{235D6DEE-7D43-4783-B381-C609A259BBAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{235D6DEE-7D43-4783-B381-C609A259BBAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8A34A2F-E505-4517-8EFF-7F80E39CF425}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8A34A2F-E505-4517-8EFF-7F80E39CF425}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8A34A2F-E505-4517-8EFF-7F80E39CF425}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8A34A2F-E505-4517-8EFF-7F80E39CF425}.Release|Any CPU.Build.0 = Release|Any CPU
+		{026EFB59-82C6-4A76-8841-490705378925}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{026EFB59-82C6-4A76-8841-490705378925}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{026EFB59-82C6-4A76-8841-490705378925}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{026EFB59-82C6-4A76-8841-490705378925}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(Performance) = preSolution
+		HasPerformanceSessions = true
+	EndGlobalSection
+EndGlobal

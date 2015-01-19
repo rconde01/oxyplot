@@ -454,7 +454,7 @@ namespace OxyPlot.Eto.Forms
          if (e.Handled)
             return;
 
-         if (ShowDynamicTooltips)
+         if (ShowDynamicTooltips && ActualModel != null)
          {
             string tooltip = null;
             var hitArgs = new HitTestArguments(new ScreenPoint(e.Location.X, e.Location.Y), MouseHitTolerance);

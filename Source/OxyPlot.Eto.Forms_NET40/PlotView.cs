@@ -544,10 +544,10 @@ namespace OxyPlot.Eto.Forms
             if (model != null)
             {
                if (!model.Background.IsUndefined())
-                  renderContext.DrawRectangle(Bounds.ToOxyRect(),
-                             model.Background,
-                             OxyColors.Undefined,
-                             0);
+                  renderContext.DrawRectangle(new OxyRect(0,0,Bounds.Width,Bounds.Height),
+                                              model.Background,
+                                              OxyColors.Undefined,
+                                              0);
 
                ((IPlotModel)model).Render(renderContext, Bounds.Width, Bounds.Height);
             }

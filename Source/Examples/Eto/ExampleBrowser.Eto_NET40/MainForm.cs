@@ -58,6 +58,7 @@ namespace ExampleBrowser.Eto_NET40
                categoryName = ex.Category;
                categoryNode = new TreeItem();
                categoryNode.Text = ex.Category;
+               categoryNode.Expanded = true;
 
                root.Children.Add(categoryNode);
             }

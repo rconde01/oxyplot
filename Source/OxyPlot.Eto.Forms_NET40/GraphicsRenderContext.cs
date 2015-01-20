@@ -441,9 +441,25 @@ namespace OxyPlot.Eto.Forms
 
          var fs = (fontWeight >= 700) ? FontStyle.Bold : FontStyle.None;
          var key = fontFamily + ' ' + fs + ' ' + fontSize.ToString("0.###");
-         Font font;
 
-         return _FontCache.TryGetValue(key, out font) ? font : _FontCache[key] = new Font(fontFamily,(float)fontSize,fs);
+         Font font = null;
+
+         if(_FontCache.TryGetValue(key, out font))
+         {
+            return font;
+         }
+
+         try
+         {
+            _FontCache[key] = font = new Font(fontFamily,(float)fontSize,fs);
+         }
+         catch (System.ArgumentOutOfRangeException)
+         {
+            //The request font isn't available...take the default
+            _FontCache[key] = font = SystemFonts.Default();
+         }
+
+         return font;
       }
 
 

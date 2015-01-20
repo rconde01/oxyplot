@@ -449,16 +449,27 @@ namespace OxyPlot.Eto.Forms
             return font;
          }
 
-         try
+         bool foundFamily = false;
+
+         foreach(FontFamily ff in Fonts.AvailableFontFamilies)
+         {
+            if(fontFamily == ff.Name)
+            {
+               foundFamily = true;
+               break;
+            }
+         }
+
+         if(foundFamily)
          {
             _FontCache[key] = font = new Font(fontFamily,(float)fontSize,fs);
          }
-         catch (System.ArgumentOutOfRangeException)
+         else
          {
             //The request font isn't available...take the default
             _FontCache[key] = font = SystemFonts.Default();
          }
-
+         
          return font;
       }
 

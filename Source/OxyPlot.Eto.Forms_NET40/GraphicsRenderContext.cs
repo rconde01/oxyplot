@@ -144,12 +144,14 @@ namespace OxyPlot.Eto.Forms
          if(!drawFill && !drawStroke)
             return;
 
-         PointF[] fPoints = new PointF[points.Count];
+         PointF[] fPoints = new PointF[points.Count + 1];
 
          for(int i = 0; i < points.Count; i++)
          {
-            fPoints[i] = new PointF((float)points[i].X, (float)points[i].Y);
+            fPoints[i] = new PointF((float)points[i % points.Count].X, (float)points[i % points.Count].Y);
          }
+
+         fPoints[points.Count] = fPoints[0];
 
          bool aliasedOrig = Graphics.AntiAlias;
 
@@ -159,7 +161,7 @@ namespace OxyPlot.Eto.Forms
          {
             var sb = GetCachedBrush(fill.ToEtoColor());
 
-            Graphics.FillPolygon(sb, fPoints);
+            Graphics.FillPolygon(sb, new ArraySegment<PointF>(fPoints,0,points.Count).Array);
          }
 
          if (drawStroke)

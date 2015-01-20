@@ -432,6 +432,8 @@ namespace OxyPlot.Eto.Forms
       /// <param name="fontWeight">Font weight.</param>
       Font GetCachedFont(string fontFamily, double fontSize, double fontWeight)
       {
+         fontSize = (72.0 / 96.0) * fontSize;
+
          if(string.IsNullOrEmpty(fontFamily))
          {
             fontFamily = FontFamilies.Sans.ToString();
